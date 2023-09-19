@@ -3,12 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	rows := 5 // Number of rows in the half pyramid
+	var rows int
+
+	fmt.Print("Enter the number of rows: ")
+	fmt.Scan(&rows)
 
 	for i := 1; i <= rows; i++ {
 		for j := 1; j <= i; j++ {
 			fmt.Print("* ")
 		}
-		fmt.Println()
+		fmt.Println() // for new line
 	}
 }

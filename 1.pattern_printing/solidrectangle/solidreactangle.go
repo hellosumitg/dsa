@@ -3,13 +3,18 @@ package main
 import "fmt"
 
 func main() {
-    rows := 5
-    cols := 10
+	var rows, cols int
 
-    for i := 1; i <= rows; i++ {
-        for j := 1; j <= cols; j++ {
-            fmt.Print("* ")
-        }
-        fmt.Println()
-    }
+	fmt.Print("Enter the number of rows: ")
+	fmt.Scan(&rows)
+
+	fmt.Print("Enter the number of columns: ")
+	fmt.Scan(&cols)
+
+	for i := 1; i <= rows; i++ {
+		for j := 1; j <= cols; j++ {
+			fmt.Print("* ")
+		}
+		fmt.Println()
+	}
 }
